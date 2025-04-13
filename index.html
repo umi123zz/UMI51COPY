@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deaceasy Inventory - Item Master</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Item Master</h1>
+    
+    <div class="form-group">
+      <label>Item Code</label>
+      <input type="text" id="itemCode">
+    </div>
+
+    <div class="form-group">
+      <label>Item Name</label>
+      <input type="text" id="itemName">
+    </div>
+
+    <div class="form-group">
+      <label>Unit</label>
+      <input type="text" id="unit">
+    </div>
+
+    <div class="form-group">
+      <label>Opening Stock</label>
+      <input type="number" id="openingStock">
+    </div>
+
+    <div class="form-group">
+      <label>Purchase Rate</label>
+      <input type="number" id="purchaseRate">
+    </div>
+
+    <div class="form-group">
+      <label>Sale Rate</label>
+      <input type="number" id="saleRate">
+    </div>
+
+    <div class="button-group">
+      <button onclick="saveItem()">Save</button>
+      <button onclick="clearForm()">Clear</button>
+    </div>
+
+    <h2>Inventory List</h2>
+    <table id="itemTable">
+      <thead>
+        <tr>
+          <th>Item Code</th>
+          <th>Item Name</th>
+          <th>Unit</th>
+          <th>Stock</th>
+          <th>Purchase</th>
+          <th>Sale</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
